@@ -25,7 +25,8 @@ public class BorrowSpecification {
         // Define the criteria for filtering, os we are using JPA Criteria API
         // with lambda expression and 3 parameters: root, query, and criteriaBuilder
         // where root is the root entity,
-        // query is the query object,
+        // query is the query object
+        // (CriteriaQuery<?> where ? isº the return type dynamically set by the query),
         // and criteriaBuilder is the criteria builder
         return (Root<Borrow> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) -> {
 
